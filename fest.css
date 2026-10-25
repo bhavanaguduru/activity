@@ -1,0 +1,563 @@
+
+/* BASIC STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #25243a;
+    line-height: 1.6;
+}
+
+/* NAVIGATION BAR */
+
+header {
+    background-color: #19152f;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #ffca3a;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #ffca3a;
+}
+
+/* HERO BANNER */
+
+.hero {
+    min-height: 480px;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: linear-gradient(
+        120deg,
+        #19152f,
+        #57368c,
+        #e84a8a
+    );
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.tagline {
+    color: #ffca3a;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.hero-content > p:not(.tagline) {
+    font-size: 17px;
+    margin-bottom: 20px;
+    max-width: 650px;
+}
+
+.hero-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+    background-color: #ffca3a;
+    color: #19152f;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 5px;
+    margin: 8px 8px 0 0;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+/* COMMON SECTION STYLING */
+
+section {
+    padding: 55px 6%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-text {
+    text-align: center;
+    color: #686879;
+    margin-bottom: 30px;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    text-align: center;
+    background-color: white;
+}
+
+.about > p {
+    max-width: 850px;
+    margin: 20px auto;
+    color: #626273;
+}
+
+/* FESTIVAL STATISTICS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.stat-box {
+    background-color: #f0eaff;
+    padding: 25px 10px;
+    border-radius: 10px;
+}
+
+.stat-box h3 {
+    font-size: 32px;
+    color: #7546bd;
+}
+
+.stat-box p {
+    color: #55516a;
+}
+
+/* EVENT SECTIONS */
+
+.events {
+    background-color: #f5f6fa;
+}
+
+.cultural {
+    background-color: #fff0f5;
+}
+
+/* EVENT CARD GRID */
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+/* EVENT CARDS */
+
+.event-card {
+    background-color: white;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #e6e2ef;
+    box-shadow: 0 4px 12px #19152f10;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #19152f20;
+}
+
+.event-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.event-type {
+    display: inline-block;
+    background-color: #e7dcff;
+    color: #6437a7;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.cultural-label {
+    background-color: #ffe0ed;
+    color: #b52d68;
+}
+
+.event-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.event-card p {
+    font-size: 14px;
+    color: #666577;
+    margin-bottom: 9px;
+}
+
+.event-card strong {
+    color: #29243f;
+}
+
+/* EVENT AND WORKSHOP BUTTONS */
+
+.event-button {
+    display: inline-block;
+    background-color: #7546bd;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.event-button:hover {
+    background-color: #56318f;
+}
+
+/* WORKSHOPS */
+
+.workshops {
+    background-color: #eeeaff;
+}
+
+.workshop-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.workshop-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 5px solid #7546bd;
+    box-shadow: 0 4px 12px #19152f10;
+}
+
+.workshop-card h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.workshop-card p {
+    margin-bottom: 12px;
+    color: #666577;
+    font-size: 14px;
+}
+
+/* FESTIVAL SCHEDULE */
+
+.schedule {
+    background-color: white;
+}
+
+.day-heading {
+    background-color: #7546bd;
+    color: white;
+    padding: 13px 18px;
+    border-radius: 6px;
+    margin: 30px 0 15px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+th {
+    background-color: #19152f;
+    color: white;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #e3e1e9;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f2fc;
+}
+
+tr:hover {
+    background-color: #eee6ff;
+}
+
+/* RULES */
+
+.rules {
+    background-color: #f5f6fa;
+}
+
+.rules-box {
+    max-width: 850px;
+    margin: 25px auto 0;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #19152f10;
+}
+
+.rules-box ol {
+    padding-left: 25px;
+}
+
+.rules-box li {
+    margin-bottom: 12px;
+    color: #555568;
+}
+
+/* REGISTRATION FORM */
+
+.registration {
+    background-color: #eeeaff;
+}
+
+.registration form {
+    max-width: 650px;
+    margin: 30px auto 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #19152f15;
+}
+
+.registration form > label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+    color: #302749;
+}
+
+.registration input[type="text"],
+.registration input[type="email"],
+.registration input[type="tel"],
+.registration select,
+.registration textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d5d1e0;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.registration input:focus,
+.registration select:focus,
+.registration textarea:focus {
+    outline: 2px solid #a88ad7;
+    border-color: #7546bd;
+}
+
+.registration textarea {
+    resize: vertical;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.terms input {
+    width: 17px;
+    height: 17px;
+}
+
+.terms label {
+    font-size: 14px;
+}
+
+.registration button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7546bd;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.registration button:hover {
+    background-color: #56318f;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    background-color: #19152f;
+    color: white;
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #100d20;
+    color: #ccccd8;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h2 {
+    color: #ffca3a;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* TABLET RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+    .event-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 55px 6%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    .hero-details {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+    .event-container,
+    .workshop-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .stat-box h3 {
+        font-size: 26px;
+    }
+
+    .registration form {
+        padding: 20px;
+    }
+
+    .rules-box {
+        padding: 25px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
